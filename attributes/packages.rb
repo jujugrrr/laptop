@@ -1,5 +1,6 @@
 default['laptop']['username'] = 'julien.berard'
 default['laptop']['brew_packages'] = %w(
+  git
   autoconf
   autojump
   gdbm
