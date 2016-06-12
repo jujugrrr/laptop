@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+
+# Path to the bash it configuration
+export BASH_IT="/Users/<%= node['laptop']['username'] %>/.bash_it"
+
+# Lock and Load a custom theme file
+# location /.bash_it/themes/
+export BASH_IT_THEME='bobby'
+
+unset MAILCHECK
+export SCM_CHECK=true
+# Load Bash It
+source $BASH_IT/bash_it.sh
+[[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
+
+# Ruby
+eval "$(rbenv init -)"
+rbenv global 2.3.1
+rbenv local 2.3.1
+
+
+# aws
+complete -C '/usr/local/bin/aws_completer' aws
+source ~/.bash_aws
+
+# other
+alias be='bundle exec'

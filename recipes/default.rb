@@ -1,0 +1,5 @@
+include_recipe 'laptop::packages'
+include_recipe 'laptop::ruby'
+include_recipe 'laptop::git'
+include_recipe 'laptop::vim'
+include_recipe 'laptop::bash'
