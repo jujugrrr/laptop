@@ -17,6 +17,7 @@ end
 
 homebrew_tap 'caskroom/cask'
 homebrew_cask 'gpgtools'
+homebrew_cask 'gitx'
 
 # Python
 python_package 'awscli'
