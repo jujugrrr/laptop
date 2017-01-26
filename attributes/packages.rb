@@ -23,4 +23,5 @@ default['laptop']['atom']['packages'] = %w(
   language-chef@0.9.0
   language-groovy@0.6.0
   script-runner@1.8.4
+  tree-view-git-status@1.3.0
 )
